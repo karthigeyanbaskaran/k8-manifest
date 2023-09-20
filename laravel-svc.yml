@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: laravel-app-service
+spec:
+  selector:
+    app: laravel-app
+  ports:
+    - protocol: TCP
+      port: 8080  # Use a different port that is available
+      targetPort: 3000
+  type: ClusterIP
