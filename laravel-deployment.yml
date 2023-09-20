@@ -16,7 +16,7 @@ spec:
         - name: laravel-app
           image: your-laravel-app-image:latest  # Replace with your Laravel app's Docker image
           ports:
-            - containerPort: 3000  # The port your Laravel app is listening on
+            - containerPort: 9000  # The port your Laravel app is listening on
           volumeMounts:
             - name: laravel-config-volume
               mountPath: /var/www/html/.env

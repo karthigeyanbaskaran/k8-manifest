@@ -7,6 +7,6 @@ spec:
     app: laravel-app
   ports:
     - protocol: TCP
-      port: 8080  # Use a different port that is available
-      targetPort: 3000
+      port: 9000  # Use a different port that is available
+      targetPort: 9000
   type: ClusterIP
